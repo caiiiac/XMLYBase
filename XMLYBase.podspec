@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XMLYBase'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of XMLYBase.'
 
 # This description is used to generate tags and improve search results.
@@ -33,20 +33,20 @@ TODO: Add long description of the pod here.
   # s.source_files = 'XMLYBase/Classes/**/*'
 
     s.subspec 'Base' do |b|
-    b.source_files = 'XMGFMBase/Classes/Base/**/*'
+    b.source_files = 'XMLYBase/Classes/Base/**/*'
     end
 
     s.subspec 'Category' do |c|
-    c.source_files = 'XMGFMBase/Classes/Category/**/*'
+    c.source_files = 'XMLYBase/Classes/Category/**/*'
     end
 
     s.subspec 'Network' do |n|
-    n.source_files = 'XMGFMBase/Classes/Network/**/*'
+    n.source_files = 'XMLYBase/Classes/Network/**/*'
     n.dependency 'AFNetworking'
     end
 
     s.subspec 'Tool' do |t|
-    t.source_files = 'XMGFMBase/Classes/Tool/**/*'
+    t.source_files = 'XMLYBase/Classes/Tool/**/*'
     end
 
   # s.resource_bundles = {

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XMLYBase_Example' do
+  pod 'XMLYBase', :path => '../'
+
+  target 'XMLYBase_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

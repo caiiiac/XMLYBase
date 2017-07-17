@@ -30,8 +30,25 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'XMLYBase/Classes/**/*'
-  
+  # s.source_files = 'XMLYBase/Classes/**/*'
+
+    s.subspec 'Base' do |b|
+    b.source_files = 'XMGFMBase/Classes/Base/**/*'
+    end
+
+    s.subspec 'Category' do |c|
+    c.source_files = 'XMGFMBase/Classes/Category/**/*'
+    end
+
+    s.subspec 'Network' do |n|
+    n.source_files = 'XMGFMBase/Classes/Network/**/*'
+    n.dependency 'AFNetworking'
+    end
+
+    s.subspec 'Tool' do |t|
+    t.source_files = 'XMGFMBase/Classes/Tool/**/*'
+    end
+
   # s.resource_bundles = {
   #   'XMLYBase' => ['XMLYBase/Assets/*.png']
   # }
